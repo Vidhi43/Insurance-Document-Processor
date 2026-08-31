@@ -1,0 +1,22 @@
+numpy==1.26.4
+--index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
+--extra-index-url https://pypi.org/simple
+easyocr
+google-cloud-vision
+pytesseract
+PyMuPDF
+pillow
+python-docx
+pywin32
+rapidfuzz
+ftfy
+fastapi
+uvicorn
+python-multipart
+requests
+pydantic
+pyyaml
+faster-whisper
+psycopg2-binary
