@@ -1,0 +1,410 @@
+# prompts.yaml
+#
+# Single source of prompts for every insurance type. Keys must match the
+# doc_type values returned by classification.py: life, car, travel, health, property.
+# life's prompt is unchanged from the original single-type version (kept
+# verbatim -- it already works against extraction_schema.PolicyExtraction).
+
+life:
+  system_prompt: |
+    You are a precise data extraction agent. Extract structured information from the provided document text as a valid JSON object. 
+    Return ONLY the raw JSON block without markdown packaging, preamble, or any conversational text.
+
+  user_prompt_template: |
+    INSURANCE POLICY EXTRACTION PROMPT
+
+    Extract these 18 fields from the insurance policy document text. For each field:
+    - Return the exact value found in the document
+    - Return empty string "" if not found
+    - Do NOT infer, guess, or hallucinate values
+    - Do NOT attempt to fix OCR errors
+    - Do NOT include labels, only the value
+
+    ---
+
+    1. INSURED_NAME
+       Look for: "The Insured:", "Insured Details:", "INSURED DETAILS"
+       Notes: May include titles (Mr, Ms, Mrs) or "Estate late [NAME]". Extract only the name.
+       Examples: Mr J Patil, MS V NIMJE, Estate late K J Patili
+
+    2. DATE_OF_BIRTH
+       Look for: "Date of Birth:", "Insured's Date of Birth:"
+       Format: DD/MM/YYYY
+       Notes: Skip co-insured DOB (appears after "Co-Insured" section). First occurrence in main section.
+       Examples: 12/12/2003, 04/04/2004, 19/04/1999
+
+    3. OCCUPATION
+       Look for: "Occupation:", "Occupation of the Insured:"
+       Notes: Can be multi-word. Include descriptive text if present.
+       Examples: Government Officer, AI/ML Engineer, Retired
+
+    4. POSTAL_ADDRESS
+       Look for: "Postal:", "Postal Address:", "Address details" with "Postal" label
+       Notes: May span multiple lines. Keep complete address with street, city, ZIP.
+       Examples: P.O. Blue Ridge Pune 3290, ERF: LOT 645, KADVILLE HEIGHTS, GLEN HINJEWADI, PUNE, 4298
+
+    5. PHYSICAL_ADDRESS
+       Look for: "Physical:", "Physical Address:", "Risk Address"
+       Notes: Property location. May be identical to postal address.
+       Examples: 26 Blue Ridge, Pune 3290, ERF: LOT 645, KADVILLE HEIGHTS, GLEN HINJEWADI, PUNE, 4298
+
+    6. CELL_PHONE
+       Look for: "Cell:", "Cell Number:", ": Cell", "Cell"
+       Format: Digits only, no spaces/hyphens
+       Notes: 10-11 digits. South African numbers start with 07, 08, 06. No country code.
+       Examples: 7686765243, 0835642989, 1234567890
+
+    7. EMAIL
+       Look for: "Email:", "E-mail:", ": Email"
+       Notes: **DO NOT CORRECT OCR ERRORS**. Extract exactly as written. Keep "yeb.o.za", "quiIcksre.co.za", etc.
+       Examples: b8hkkhh@yeb.o.za, cosdioigov31@gmail.com, heman.f@kotfo.co.za
+
+    8. POLICY_NUMBER_BROKER
+       Look for: "Policy Number:", "Policy number (Broker):", "Optional Policy No"
+       Notes: Alphanumeric code. May contain letters, numbers, hyphens.
+       Examples: GNBVII-0065509, MER31625OLD, 013345
+
+    9. START_DATE_OF_COVER
+        Look for: "Start Date of Cover:", "Start Date of Cover\t", "Start Date:"
+        Format: DD/MM/YYYY
+        Notes: When coverage begins. Different from Original Inception Date.
+        Examples: 01/05/2022, 01/11/2025
+
+    10. ANNIVERSARY_DATE
+        Look for: "Anniversary Date:", "Anniversary Date\t"
+        Format: DD/MM/YYYY
+        Notes: Annual renewal date. Return empty if not found.
+        Examples: 01/01/2025, 01/11/2026
+
+    11. ORIGINAL_INCEPTION_DATE
+        Look for: "Original Inception Date:", "Original inception date\t"
+        Format: DD/MM/YYYY
+        Notes: When policy was first created (may be years ago).
+        Examples: 01/01/2021, 01/01/2002, 17/02/2016
+
+    12. PERIOD_OF_INSURANCE
+        Look for: "Period of Insurance:", "Period of insurance\t"
+        Notes: Coverage dates and renewal clause. May span multiple lines.
+        Examples: From 01/05/2023 to 30/05/2023 both dates inclusive, 01/01/2025 to 31/01/2025, and renewing monthly thereafter
+
+    13. TOTAL_PREMIUM
+        Look for: "Total Premium Payable", "Premium:", "Total Premium"
+        Notes: Include currency symbol if present. Handle both comma and period as decimal.
+        Examples: R1 279,95, R 1279.95, 1,500.00
+
+    14. PAYMENT_METHOD
+        Look for: "Payment Method:", "Payment Method\t"
+        Notes: Usually 1-2 words.
+        Examples: Debit Order, Credit Card, Bank Transfer, Monthly
+
+    15. CO_INSURED_NAME
+        Look for: "Co-Insured:", "Co-policyholder:", "CO - INSURED DETAILS"
+        Notes: Different person from main insured. Return empty if no co-insured exists.
+        Examples: Mr D Patl & Family FTRR&I, Mrs E Goveder & Family
+
+    16. INSURER_NAME
+        Look for: "Insurer:", "Insurer\t:", "Insurance Company:" in POLICY DETAILS section
+        Notes: Insurance company providing coverage. Different from broker/intermediary.
+        Examples: Old Mutual Insure Ltd, Old Mutual Insure Limited
+
+    17. INSURER_PHONE
+        Look for: "Telephone Number:" within "Details of Insurer" section
+        Format: Digits only, no spaces/hyphens
+        Notes: 10-11 digits. Make sure it's in Insurer block, not Broker.
+        Examples: 8786888452, 445 014 9031
+
+    18. INTERMEDIARY_NAME
+        Look for: "Intermediary:", "Broker:", "Details of Broker", "Details of Underwriting Manager"
+        Notes: Agent or broker arranging the insurance.
+        Examples: FIRST CONSULT, Quicksure (Pty) Ltd, Curnow Scott (Pty) Ltd
+
+    ---
+
+    VALIDATION RULES:
+
+    Phone Numbers:
+    - Must be 10-11 digits
+    - Remove all non-numeric characters
+    - No country code (+27, 0027)
+    - If invalid format, return empty
+
+    Email Addresses:
+    - Must contain @ and .
+    - DO NOT correct OCR errors
+    - If doesn't look like email, return empty
+    - Extract exactly as written
+
+    Dates:
+    - Must be in DD/MM/YYYY format
+    - Validate: day 01-31, month 01-12, year 1900-2100
+    - If invalid, return empty
+
+    Names:
+    - Keep titles if present (Mr, Ms, Mrs, Estate late)
+    - Remove extra whitespace between words
+    - Keep exactly as formatted
+
+    Addresses:
+    - Clean up excessive hyphens and spacing
+    - Keep all meaningful components
+    - Preserve line breaks if multi-line
+
+    ---
+
+    Example response format:
+    {{
+      "insured_name": "Mr J Patil",
+      "date_of_birth": "12/12/2003",
+      "occupation": "Government Officer",
+      "postal_address": "FLAT 101, HINJA, PUNE, 2109",
+      "physical_address": "29 BLUE RIDGE, PUNE, 2176",
+      "cell_phone": "7686765243",
+      "email": "b8hkkhh@yeb.o.za",
+      "policy_number_broker": "013345",
+      "start_date_of_cover": "01/05/2022",
+      "anniversary_date": "01/01/2025",
+      "original_inception_date": "01/01/2002",
+      "period_of_insurance": "From 01/05/2023 to 30/05/2023 both dates inclusive",
+      "total_premium": "R1 279,95",
+      "payment_method": "Debit Order",
+      "co_insured_name": "",
+      "insurer_name": "Old Mutual Insure Ltd",
+      "insurer_phone": "8786888452",
+      "intermediary_name": "Curnow Scott (Pty) Ltd"
+    }}
+
+    ---
+
+    DOCUMENT TEXT TO EXTRACT FROM:
+    {document_text}
+
+car:
+  system_prompt: |
+    You are a precise data extraction agent. Extract structured information from the provided motor/vehicle insurance document text as a valid JSON object.
+    Return ONLY the raw JSON block without markdown packaging, preamble, or any conversational text.
+
+  user_prompt_template: |
+    VEHICLE INSURANCE EXTRACTION PROMPT
+
+    NOTE: this template is based on a single reviewed sample (a two-wheeler
+    package policy). Unlike the life-policy template, it does not yet encode
+    confirmed real-world OCR failure modes -- treat field notes below as a
+    starting point, to be refined once more sample documents are seen.
+
+    Extract these fields from the vehicle insurance document text. For each field:
+    - Return the exact value found in the document
+    - Return empty string "" if not found
+    - Do NOT infer, guess, or hallucinate values
+    - Do NOT attempt to fix OCR errors
+
+    1. PROPOSER_NAME -- Look for: "Proposer Name", "Name and Address of Insured", "Insured Name". The policyholder's full name.
+    2. PROPOSER_ADDRESS -- Look for: "Proposer Address", "Insured Address". Full address, multi-line if needed.
+    3. PROPOSER_MOBILE -- Look for: "Proposer Mobile Number", "Mobile Number". Digits only.
+    4. PROPOSER_EMAIL -- Look for: "Proposer e-mail id", "Email address". Exactly as written.
+    5. POLICY_NUMBER -- Look for: "Policy Number", "Policy number". Alphanumeric, may include hyphens.
+    6. PREVIOUS_POLICY_NUMBER -- Look for: "Previous Policy No". Empty if this is a first-time policy.
+    7. REGISTRATION_NUMBER -- Look for: "Registration Number". Vehicle registration plate, e.g. MH13CG6010.
+    8. VEHICLE_MAKE -- Look for: "Vehicle Make", "Make & Model" (first part). e.g. HONDA.
+    9. VEHICLE_MODEL -- Look for: "Vehicle Model", "Make & Model" (second part). e.g. DREAM YUGA.
+    10. VEHICLE_SUB_TYPE -- Look for: "Vehicle Sub Type", "SubType". e.g. SELF DRUM CBS.
+    11. ENGINE_NUMBER -- Look for: "Engine Number". Alphanumeric code.
+    12. CHASSIS_NUMBER -- Look for: "Chassis Number". Alphanumeric code.
+    13. YEAR_OF_MANUFACTURE -- Look for: "Year of Manufacture", "Year Of Manufacturing". 4-digit year.
+    14. VEHICLE_IDV -- Look for: "Vehicle IDV", "Vehicle IDV (in Rs.)". Currency amount, no need to strip symbol.
+    15. TOTAL_IDV -- Look for: "Total IDV", "Total Value". Currency amount.
+    16. NCB_PERCENT -- Look for: "NCB %", "NCB (No Claim Bonus)". May be negative, e.g. "-20".
+    17. POLICY_PERIOD_START -- Look for: "Period of Insurance From", "Policy Period From". Date may be in DD-MMM-YYYY format (e.g. 12-JUN-2026).
+    18. POLICY_PERIOD_END -- Look for: "Period of Insurance To", "Policy Period To". Same date format as start.
+    19. OWN_DAMAGE_PREMIUM -- Look for: "Own Damage Premium", "Total OD Premium". Currency amount.
+    20. LIABILITY_PREMIUM -- Look for: "Liability Premium", "Total Act Premium", "Basic Third Party Liability". Currency amount.
+    21. TOTAL_PREMIUM -- Look for: "Total Premium (Net Premium)". Currency amount, NOT the final GST-inclusive figure.
+    22. FINAL_PREMIUM -- Look for: "Final Premium". The GST-inclusive total the customer actually pays.
+    23. BROKER_NAME -- Look for: "Broker Name". Empty if sold direct with no broker.
+    24. BROKER_CODE -- Look for: "Broker Code". Alphanumeric.
+    25. CUSTOMER_ID -- Look for: "Customer ID". Numeric or alphanumeric identifier.
+
+    VALIDATION RULES:
+    - Phone numbers: digits only, 9-11 digits, otherwise return empty
+    - Email: must contain "@" and ".", otherwise return empty, extract exactly as written
+    - Dates: keep as written (DD-MMM-YYYY or DD/MM/YYYY), do not reformat
+    - Currency amounts: keep symbol/commas if present, do not reformat
+
+    Example response format:
+    {{
+      "proposer_name": "ATHARV SUNIL SURYAVANSHI",
+      "proposer_address": "A P, 33 - 34 Saravasukhi Nagar Limayewadi, Solapur, Solapur-413001",
+      "proposer_mobile": "7878782255",
+      "proposer_email": "ligade@gmail.com",
+      "policy_number": "OG-27-1901-1802-00003523",
+      "previous_policy_number": "OG-26-1901-1802-00002713",
+      "registration_number": "MH13CG6010",
+      "vehicle_make": "HONDA",
+      "vehicle_model": "DREAM YUGA",
+      "vehicle_sub_type": "SELF DRUM CBS",
+      "engine_number": "JC58ET4094114",
+      "chassis_number": "ME4JC58AEFT093810",
+      "year_of_manufacture": "2016",
+      "vehicle_idv": "21,330.00",
+      "total_idv": "21,330.00",
+      "ncb_percent": "-20",
+      "policy_period_start": "12-JUN-2026",
+      "policy_period_end": "11-JUN-2027",
+      "own_damage_premium": "229.00",
+      "liability_premium": "1,045.00",
+      "total_premium": "1,274.00",
+      "final_premium": "1,504.00",
+      "broker_name": "PROBUS INSURANCE BROKER PRIVATE LIMITED",
+      "broker_code": "10037456",
+      "customer_id": "468223230"
+    }}
+
+    DOCUMENT TEXT TO EXTRACT FROM:
+    {document_text}
+
+travel:
+  system_prompt: |
+    You are a precise data extraction agent. Extract structured information from the provided travel insurance document text as a valid JSON object.
+    Return ONLY the raw JSON block without markdown packaging, preamble, or any conversational text.
+
+  user_prompt_template: |
+    TRAVEL INSURANCE EXTRACTION PROMPT
+
+    NOTE: this template is based on a single reviewed sample (an IRCTC
+    e-ticket travel cover certificate). Treat field notes below as a
+    starting point, to be refined once more sample documents are seen.
+
+    Extract these fields from the travel insurance document text. For each field:
+    - Return the exact value found in the document
+    - Return empty string "" if not found
+    - Do NOT infer, guess, or hallucinate values
+    - Do NOT attempt to fix OCR errors
+
+    1. MASTER_POLICY_NUMBER -- Look for: "Master policy No.". Long numeric/alphanumeric code.
+    2. CERTIFICATE_NUMBER -- Look for: "Certificate Number". Numeric code.
+    3. GROUP_POLICYHOLDER_NAME -- Look for: "Name and Address of the Group Organizer/Group Policy holder". Organization name only, not the full address.
+    4. INSURED_NAME -- Look for: "Name of the Insured", "Name of Insured Person". Full name.
+    5. INSURED_AGE -- Look for: "Age" column in the insured-person table. Number only.
+    6. INSURED_GENDER -- Look for: "Gender (Male / Female)" column. "Male" or "Female".
+    7. INSURED_MOBILE -- Look for: "Mobile Number" column. Digits only.
+    8. INSURED_EMAIL -- Look for: "E-Mail ID" column. Exactly as written, including if it wraps across a line break.
+    9. TRIP_START -- Look for: "Trip : From". Keep date and time together exactly as written.
+    10. TRIP_END -- Look for: "Trip : ... To". Keep date and time together exactly as written.
+    11. ORIGINATING_STATION -- Look for: "Originating Station".
+    12. DESTINATION_STATION -- Look for: "Destination Station".
+    13. TRAIN_NUMBER -- Look for: "Train Number".
+    14. TRAIN_NAME -- Look for: "Train Name".
+    15. PNR_NUMBER -- Look for: "PNR Number". Numeric code.
+    16. COVER_DEATH -- Look for: "Death" column in the coverage table. Sum insured amount.
+    17. COVER_PERMANENT_TOTAL_DISABILITY -- Look for: "Permanent Total Disability" column.
+    18. COVER_PERMANENT_PARTIAL_DISABILITY -- Look for: "Permanent Partial Disability" column.
+    19. COVER_HOSPITALIZATION_EXPENSES -- Look for: "Hospitalization Expenses For Injury" column.
+    20. COVER_TRANSPORTATION_MORTAL_REMAINS -- Look for: "Transportation Of Mortal Remains" column.
+    21. BASE_PREMIUM -- Look for: "Base Premium" in the premium schedule.
+    22. IGST -- Look for: "IGST" in the premium schedule.
+    23. TOTAL_PREMIUM -- Look for: "Total Premium" in the premium schedule.
+    24. CERTIFICATE_ISSUE_DATE -- Look for: "this Certificate of Insurance has been signed on", "Date :". Format DD/MM/YYYY.
+    25. INSURER_NAME -- Look for: the underwriting company name at the top of the document, e.g. "UNITED INDIA INSURANCE COMPANY LIMITED".
+    26. GST_NUMBER -- Look for: "GST No".
+    27. PAN_NUMBER -- Look for: "PAN No".
+
+    VALIDATION RULES:
+    - Phone numbers: digits only, 9-11 digits, otherwise return empty
+    - Email: must contain "@" and ".", otherwise return empty, extract exactly as written
+    - Dates: DD/MM/YYYY where the document shows a plain date; keep trip start/end as full date+time strings
+    - Currency amounts: keep as written, do not reformat
+
+    Example response format:
+    {{
+      "master_policy_number": "5002004224P101121449000",
+      "certificate_number": "82428963570106012026",
+      "group_policyholder_name": "Indian Railway Catering and Tourism Corporation Limited",
+      "insured_name": "ATHARV SURYAVANS",
+      "insured_age": "21",
+      "insured_gender": "Male",
+      "insured_mobile": "9371110123",
+      "insured_email": "atharvsuryavanshi35@gmail.com",
+      "trip_start": "08/01/2026 14:00:00",
+      "trip_end": "08/01/2026 18:05:00",
+      "originating_station": "SOLAPUR JN",
+      "destination_station": "PUNE JN",
+      "train_number": "12170",
+      "train_name": "PUNE INTERCITY",
+      "pnr_number": "8242896357",
+      "cover_death": "10,00,000/-",
+      "cover_permanent_total_disability": "10,00,000/-",
+      "cover_permanent_partial_disability": "upto 7,50,000",
+      "cover_hospitalization_expenses": "Upto 2,00,000/-",
+      "cover_transportation_mortal_remains": "10,000/-",
+      "base_premium": "0.38",
+      "igst": "0.07",
+      "total_premium": "0.45",
+      "certificate_issue_date": "06/01/2026",
+      "insurer_name": "UNITED INDIA INSURANCE COMPANY LIMITED",
+      "gst_number": "33AAACU5552CIZQ",
+      "pan_number": "AAACU5552C"
+    }}
+
+    DOCUMENT TEXT TO EXTRACT FROM:
+    {document_text}
+
+health:
+  system_prompt: |
+    You are a precise data extraction agent. Extract structured information from the provided health insurance document text as a valid JSON object.
+    Return ONLY the raw JSON block without markdown packaging, preamble, or any conversational text.
+
+  user_prompt_template: |
+    HEALTH INSURANCE EXTRACTION PROMPT
+
+    Extract these fields. Return "" if not found. Do NOT infer or hallucinate.
+
+    1. POLICY_NUMBER -- "Policy No.", "Renewal Endorsement No". e.g. 7619162501076561
+    2. INSURER_NAME -- Company name at top of document. e.g. "Star Health And Allied Insurance Company Limited"
+    3. PROPOSER_NAME -- "Proposer Name", "Customer Name". Full name.
+    4. PROPOSER_ADDRESS -- "Proposer Address". Full address.
+    5. PROPOSER_MOBILE -- "Phone No", "Mobile". Digits only.
+    6. PROPOSER_EMAIL -- "E-mail Id". Exactly as written.
+    7. CUSTOMER_CODE -- "Customer Code", "Customer ID". e.g. PI0007840088
+    8. GSTIN -- "GSTIN" of supplier/insurer. e.g. 27AAJCS4517L1ZY
+    9. DATE_OF_INCEPTION -- "Date of Inception of first policy". DD-MMM-YYYY or DD/MM/YYYY.
+    10. PERIOD_START -- "From" date in Period of Insurance. Keep date+time if present.
+    11. PERIOD_END -- "To" date in Period of Insurance. Keep date+time if present.
+    12. SUM_INSURED -- "Basic Floater Sum Insured", "Sum Insured". e.g. "Rs. 25,00,000/-"
+    13. SCHEME_DESCRIPTION -- "Scheme Description". e.g. "2A+2C"
+    14. BASE_PREMIUM -- "Premium", "Name Premium". e.g. "Rs. 1,875/-"
+    15. STAMP_DUTY -- "Stamp Duty". e.g. "Rs. 125/-"
+    16. TOTAL_PREMIUM -- "Total Premium". e.g. "Rs. 1,875/-"
+    17. INTERMEDIARY_CODE -- "Intermediary Code". e.g. BA0000335982
+    18. INTERMEDIARY_NAME -- "Name" under intermediary/agent section. e.g. "Mr.MULANI YUNUS ILAHI"
+    19. INSURED_MEMBERS -- All insured persons as a single comma-separated string: "Name (Gender, DOB, Relationship)". e.g. "SUNIL SURYAVANSHI (Male, 10-Jun-1975, Self), SMITA SURYAVANSHI (Female, 04-Dec-1980, Spouse)"
+    20. NOMINEE_NAME -- "Name" under Nominee Details.
+    21. ISSUING_OFFICE -- "Issuing Office Name". e.g. "Branch Office - Solapur"
+
+    VALIDATION: phone digits only 9-11 digits; email must contain "@"; dates as written.
+
+    Example:
+    {{
+      "policy_number": "7619162501076561",
+      "insurer_name": "Star Health And Allied Insurance Company Limited",
+      "proposer_name": "SUNIL RAMKRISHNA SURYAVANSHI",
+      "proposer_address": "33/34 sarvsukhi nagar, limyewadi, Solapur North, Solapur, Maharashtra-413001",
+      "proposer_mobile": "9028922255",
+      "proposer_email": "suryawanshi.sr@Gmail.com",
+      "customer_code": "PI0007840088",
+      "gstin": "27AAJCS4517L1ZY",
+      "date_of_inception": "04-Feb-2025",
+      "period_start": "04-Feb-2026 00:00 Hrs",
+      "period_end": "Midnight of 03-Feb-2027",
+      "sum_insured": "Rs. 25,00,000/-",
+      "scheme_description": "2A+2C",
+      "base_premium": "Rs. 1,875/-",
+      "stamp_duty": "Rs. 125/-",
+      "total_premium": "Rs. 1,875/-",
+      "intermediary_code": "BA0000335982",
+      "intermediary_name": "Mr.MULANI YUNUS ILAHI",
+      "insured_members": "SUNIL RAMKRISHNA SURYAVANSHI (Male, 10-Jun-1975, Self), SMITA SURYAVANSHI (Female, 04-Dec-1980, Spouse), ATHARVA SURYAVANSHI (Male, 06-Nov-2004, Son), SANIKA SURYAVANSHI (Female, 20-Dec-2007, Daughter)",
+      "nominee_name": "SMITA SUNIL SURYAVANSHI",
+      "issuing_office": "Branch Office - Solapur"
+    }}
+
+    DOCUMENT TEXT:
+    {document_text}

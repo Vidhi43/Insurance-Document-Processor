@@ -1,0 +1,123 @@
+# fields.yaml
+life:
+  - {name: insured_name, format: free_text}
+  - {name: date_of_birth, format: date}
+  - {name: occupation, format: free_text}
+  - {name: postal_address, format: free_text}
+  - {name: physical_address, format: free_text}
+  - {name: cell_phone, format: phone}
+  - {name: email, format: email}
+  - {name: policy_number_broker, format: free_text}
+  - {name: start_date_of_cover, format: date}
+  - {name: anniversary_date, format: date}
+  - {name: original_inception_date, format: date}
+  - {name: period_of_insurance, format: free_text}
+  - {name: total_premium, format: currency}
+  - {name: payment_method, format: free_text}
+  - {name: co_insured_name, format: free_text}
+  - {name: insurer_name, format: free_text, required: true}
+  - {name: insurer_phone, format: phone}
+  - {name: intermediary_name, format: free_text, required: true}
+
+car:
+  - {name: proposer_name, format: free_text}
+  - {name: proposer_address, format: free_text}
+  - {name: proposer_mobile, format: phone}
+  - {name: proposer_email, format: email}
+  - {name: policy_number, format: free_text}
+  - {name: previous_policy_number, format: free_text}
+  - {name: registration_number, format: free_text}
+  - {name: vehicle_make, format: free_text}
+  - {name: vehicle_model, format: free_text}
+  - {name: vehicle_sub_type, format: free_text}
+  - {name: engine_number, format: free_text}
+  - {name: chassis_number, format: free_text}
+  - {name: year_of_manufacture, format: integer}
+  - {name: vehicle_idv, format: currency}
+  - {name: total_idv, format: currency}
+  - {name: ncb_percent, format: percent}
+  - {name: policy_period_start, format: date}
+  - {name: policy_period_end, format: date}
+  - {name: own_damage_premium, format: currency}
+  - {name: liability_premium, format: currency}
+  - {name: total_premium, format: currency}
+  - {name: final_premium, format: currency}
+  - {name: broker_name, format: free_text}
+  - {name: broker_code, format: free_text}
+  - {name: customer_id, format: free_text}
+
+travel:
+  - {name: master_policy_number, format: free_text}
+  - {name: certificate_number, format: free_text}
+  - {name: group_policyholder_name, format: free_text}
+  - {name: insured_name, format: free_text}
+  - {name: insured_age, format: integer}
+  - {name: insured_gender, format: free_text}
+  - {name: insured_mobile, format: phone}
+  - {name: insured_email, format: email}
+  - {name: trip_start, format: free_text}
+  - {name: trip_end, format: free_text}
+  - {name: originating_station, format: free_text}
+  - {name: destination_station, format: free_text}
+  - {name: train_number, format: free_text}
+  - {name: train_name, format: free_text}
+  - {name: pnr_number, format: free_text}
+  - {name: cover_death, format: currency}
+  - {name: cover_permanent_total_disability, format: currency}
+  - {name: cover_permanent_partial_disability, format: currency}
+  - {name: cover_hospitalization_expenses, format: currency}
+  - {name: cover_transportation_mortal_remains, format: currency}
+  - {name: base_premium, format: currency}
+  - {name: igst, format: currency}
+  - {name: total_premium, format: currency}
+  - {name: certificate_issue_date, format: date}
+  - {name: insurer_name, format: free_text}
+  - {name: gst_number, format: free_text}
+  - {name: pan_number, format: free_text}
+
+health:
+  - {name: policy_number, format: free_text}
+  - {name: insurer_name, format: free_text}
+  - {name: proposer_name, format: free_text}
+  - {name: proposer_address, format: free_text}
+  - {name: proposer_mobile, format: phone}
+  - {name: proposer_email, format: email}
+  - {name: customer_code, format: free_text}
+  - {name: gstin, format: free_text}
+  - {name: date_of_inception, format: date}
+  - {name: period_start, format: date}
+  - {name: period_end, format: date}
+  - {name: sum_insured, format: currency}
+  - {name: scheme_description, format: free_text}
+  - {name: base_premium, format: currency}
+  - {name: stamp_duty, format: currency}
+  - {name: total_premium, format: currency}
+  - {name: intermediary_code, format: free_text}
+  - {name: intermediary_name, format: free_text}
+  - {name: insured_members, format: free_text}
+  - {name: nominee_name, format: free_text}
+  - {name: issuing_office, format: free_text}
+
+property:
+  - {name: policy_number, format: free_text}
+  - {name: insurer_name, format: free_text}
+  - {name: insured_name, format: free_text}
+  - {name: insured_reg_number, format: free_text}
+  - {name: insured_vat_number, format: free_text}
+  - {name: postal_address, format: free_text}
+  - {name: business_description, format: free_text}
+  - {name: endorsement_number, format: free_text}
+  - {name: first_inception_date, format: date}
+  - {name: effective_date, format: date}
+  - {name: anniversary_date, format: date}
+  - {name: period_of_insurance, format: free_text}
+  - {name: territorial_limits, format: free_text}
+  - {name: master_policy_number, format: free_text}
+  - {name: broker_name, format: free_text}
+  - {name: broker_vat_number, format: free_text}
+  - {name: broker_fsp_number, format: free_text}
+  - {name: total_premium, format: currency}
+  - {name: broker_fee, format: currency}
+  - {name: final_debit, format: currency}
+  - {name: payment_frequency, format: free_text}
+  - {name: narrative, format: free_text}
