@@ -1,0 +1,875 @@
+{
+  "field_all_similarities": {
+    "insured_name": [
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      95.65217391304348,
+      95.23809523809523,
+      93.61702127659575,
+      100.0
+    ],
+    "date_of_birth": [
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      0.0,
+      100.0,
+      100.0
+    ],
+    "occupation": [
+      100.0,
+      100.0,
+      100.0,
+      93.33333333333333,
+      98.38709677419355,
+      98.38709677419355,
+      98.38709677419355,
+      100.0,
+      100.0,
+      100.0,
+      93.33333333333333
+    ],
+    "postal_address": [
+      100.0,
+      100.0,
+      86.48648648648648,
+      86.48648648648648,
+      100.0,
+      100.0,
+      100.0,
+      95.9349593495935,
+      95.08196721311475,
+      95.08196721311475,
+      95.45454545454545
+    ],
+    "physical_address": [
+      100.0,
+      100.0,
+      100.0,
+      95.65217391304348,
+      100.0,
+      100.0,
+      100.0,
+      95.9349593495935,
+      95.08196721311475,
+      95.08196721311475,
+      0.0
+    ],
+    "cell_phone": [
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0
+    ],
+    "policy_number_broker": [
+      100.0,
+      100.0,
+      100.0,
+      93.33333333333333,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      93.33333333333333
+    ],
+    "start_date_of_cover": [
+      100.0,
+      100.0,
+      100.0,
+      90.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0
+    ],
+    "anniversary_date": [
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0
+    ],
+    "original_inception_date": [
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0
+    ],
+    "period_of_insurance": [
+      52.05479452054795,
+      52.05479452054795,
+      52.05479452054795,
+      97.88519637462235,
+      100.0,
+      50.76142131979695,
+      50.76142131979695,
+      99.1304347826087,
+      99.1304347826087,
+      99.1304347826087,
+      64.42953020134227
+    ],
+    "payment_method": [
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0
+    ],
+    "insurer_name": [
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0
+    ],
+    "intermediary_name": [
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      18.181818181818176,
+      18.181818181818176,
+      18.181818181818176,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0
+    ],
+    "email": [
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0
+    ],
+    "total_premium": [
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      40.0
+    ],
+    "insurer_phone": [
+      0.0,
+      100.0,
+      100.0
+    ],
+    "proposer_name": [
+      100.0,
+      100.0,
+      91.89189189189189
+    ],
+    "proposer_address": [
+      80.98159509202453,
+      94.33962264150944,
+      64.93506493506493
+    ],
+    "proposer_mobile": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "proposer_email": [
+      100.0,
+      100.0,
+      0.0
+    ],
+    "policy_number": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "previous_policy_number": [
+      100.0
+    ],
+    "registration_number": [
+      100.0
+    ],
+    "vehicle_make": [
+      100.0
+    ],
+    "vehicle_model": [
+      100.0
+    ],
+    "vehicle_sub_type": [
+      100.0
+    ],
+    "engine_number": [
+      100.0
+    ],
+    "chassis_number": [
+      100.0
+    ],
+    "year_of_manufacture": [
+      100.0
+    ],
+    "vehicle_idv": [
+      100.0
+    ],
+    "total_idv": [
+      100.0
+    ],
+    "ncb_percent": [
+      100.0
+    ],
+    "policy_period_start": [
+      100.0
+    ],
+    "policy_period_end": [
+      100.0
+    ],
+    "own_damage_premium": [
+      100.0
+    ],
+    "liability_premium": [
+      100.0
+    ],
+    "final_premium": [
+      100.0
+    ],
+    "broker_name": [
+      100.0
+    ],
+    "broker_code": [
+      100.0
+    ],
+    "customer_id": [
+      100.0
+    ],
+    "master_policy_number": [
+      100.0
+    ],
+    "certificate_number": [
+      100.0
+    ],
+    "group_policyholder_name": [
+      100.0
+    ],
+    "insured_age": [
+      100.0
+    ],
+    "insured_gender": [
+      100.0
+    ],
+    "insured_mobile": [
+      100.0
+    ],
+    "insured_email": [
+      100.0
+    ],
+    "trip_start": [
+      100.0
+    ],
+    "trip_end": [
+      100.0
+    ],
+    "originating_station": [
+      100.0
+    ],
+    "destination_station": [
+      100.0
+    ],
+    "train_number": [
+      100.0
+    ],
+    "train_name": [
+      100.0
+    ],
+    "pnr_number": [
+      100.0
+    ],
+    "cover_death": [
+      100.0
+    ],
+    "cover_permanent_total_disability": [
+      100.0
+    ],
+    "cover_permanent_partial_disability": [
+      100.0
+    ],
+    "cover_hospitalization_expenses": [
+      100.0
+    ],
+    "cover_transportation_mortal_remains": [
+      100.0
+    ],
+    "base_premium": [
+      100.0,
+      100.0
+    ],
+    "igst": [
+      100.0
+    ],
+    "certificate_issue_date": [
+      100.0
+    ],
+    "gst_number": [
+      100.0
+    ],
+    "pan_number": [
+      100.0
+    ],
+    "customer_code": [
+      100.0
+    ],
+    "gstin": [
+      100.0
+    ],
+    "date_of_inception": [
+      57.14285714285714,
+      100.0
+    ],
+    "period_start": [
+      38.70967741935484,
+      100.0
+    ],
+    "period_end": [
+      0.0,
+      100.0
+    ],
+    "sum_insured": [
+      100.0
+    ],
+    "scheme_description": [
+      100.0,
+      0.0
+    ],
+    "stamp_duty": [
+      100.0
+    ],
+    "intermediary_code": [
+      100.0
+    ],
+    "insured_members": [
+      100.0,
+      53.93258426966292
+    ],
+    "nominee_name": [
+      100.0
+    ],
+    "issuing_office": [
+      100.0
+    ],
+    "co_insured_name": [
+      96.66666666666667,
+      96.42857142857143,
+      96.875
+    ]
+  },
+  "field_correct_counts": {
+    "insured_name": 9,
+    "date_of_birth": 10,
+    "occupation": 6,
+    "postal_address": 5,
+    "physical_address": 6,
+    "cell_phone": 11,
+    "policy_number_broker": 9,
+    "start_date_of_cover": 10,
+    "anniversary_date": 11,
+    "original_inception_date": 11,
+    "period_of_insurance": 1,
+    "payment_method": 8,
+    "insurer_name": 14,
+    "intermediary_name": 10,
+    "email": 6,
+    "total_premium": 6,
+    "insurer_phone": 2,
+    "proposer_name": 2,
+    "proposer_address": 0,
+    "proposer_mobile": 3,
+    "proposer_email": 2,
+    "policy_number": 3,
+    "previous_policy_number": 1,
+    "registration_number": 1,
+    "vehicle_make": 1,
+    "vehicle_model": 1,
+    "vehicle_sub_type": 1,
+    "engine_number": 1,
+    "chassis_number": 1,
+    "year_of_manufacture": 1,
+    "vehicle_idv": 1,
+    "total_idv": 1,
+    "ncb_percent": 1,
+    "policy_period_start": 1,
+    "policy_period_end": 1,
+    "own_damage_premium": 1,
+    "liability_premium": 1,
+    "final_premium": 1,
+    "broker_name": 1,
+    "broker_code": 1,
+    "customer_id": 1,
+    "master_policy_number": 1,
+    "certificate_number": 1,
+    "group_policyholder_name": 1,
+    "insured_age": 1,
+    "insured_gender": 1,
+    "insured_mobile": 1,
+    "insured_email": 1,
+    "trip_start": 1,
+    "trip_end": 1,
+    "originating_station": 1,
+    "destination_station": 1,
+    "train_number": 1,
+    "train_name": 1,
+    "pnr_number": 1,
+    "cover_death": 1,
+    "cover_permanent_total_disability": 1,
+    "cover_permanent_partial_disability": 1,
+    "cover_hospitalization_expenses": 1,
+    "cover_transportation_mortal_remains": 1,
+    "base_premium": 2,
+    "igst": 1,
+    "certificate_issue_date": 1,
+    "gst_number": 1,
+    "pan_number": 1,
+    "customer_code": 1,
+    "gstin": 1,
+    "date_of_inception": 1,
+    "period_start": 1,
+    "period_end": 1,
+    "sum_insured": 1,
+    "scheme_description": 1,
+    "stamp_duty": 1,
+    "intermediary_code": 1,
+    "insured_members": 1,
+    "nominee_name": 1,
+    "issuing_office": 1,
+    "co_insured_name": 0
+  },
+  "format_metrics": {
+    "word": {
+      "total": 30,
+      "correct": 26,
+      "similarity": 2819.385130796357
+    },
+    "pdf": {
+      "total": 147,
+      "correct": 127,
+      "similarity": 14002.359602495966
+    },
+    "image": {
+      "total": 48,
+      "correct": 32,
+      "similarity": 4644.066620422444
+    },
+    "video": {
+      "total": 14,
+      "correct": 9,
+      "similarity": 1246.5507423225545
+    },
+    "audio": {
+      "total": 13,
+      "correct": 7,
+      "similarity": 950.7595410966197
+    }
+  },
+  "overall_total": 252,
+  "overall_correct": 201,
+  "overall_similarity": 23663.121637133936,
+  "per_file_report_lines": [
+    "======================================================================",
+    " RUN: gt copy.json",
+    "======================================================================\n",
+    "File: 1_removed.docx (resolved as: 1_removed.docx)",
+    "Fields:",
+    "  - insured_name                   : actual='MS V NIMJE'                           | predicted='MS V NIMJE'                        | accuracy=100.00%",
+    "  - date_of_birth                  : actual='04/04/2004'                           | predicted='04/04/2004'                        | accuracy=100.00%",
+    "  - occupation                     : actual='AI/ML Engineer'                       | predicted='AI/ML Engineer'                    | accuracy=100.00%",
+    "  - postal_address                 : actual='P.O. Blue Ridge Pune 3290'            | predicted='P.O. Blue Ridge Pune 3290'         | accuracy=100.00%",
+    "  - physical_address               : actual='26 Blue Ridge Pune 3290'              | predicted='26 Blue Ridge Pune 3290'           | accuracy=100.00%",
+    "  - cell_phone                     : actual='1234567890'                           | predicted='1234567890'                        | accuracy=100.00%",
+    "  - email                          : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - policy_number_broker           : actual='GNBVII-0065509'                       | predicted='GNBVII-0065509'                    | accuracy=100.00%",
+    "  - start_date_of_cover            : actual='01/01/2024'                           | predicted='01/01/2024'                        | accuracy=100.00%",
+    "  - anniversary_date               : actual='01/01/2026'                           | predicted='01/01/2026'                        | accuracy=100.00%",
+    "  - original_inception_date        : actual='01/01/2021'                           | predicted='01/01/2021'                        | accuracy=100.00%",
+    "  - period_of_insurance            : actual='(A) 01/01/2025 to 31/01/2025, and renewing monthly thereafter. (B) Any subsequent period for which the Company agrees to renew this policy or any section thereof.' | predicted='01/01/2025 to 31/01/2025, and renewing monthly thereafter' | accuracy= 52.05%",
+    "  - total_premium                  : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - payment_method                 : actual='Debit Order'                          | predicted='Debit Order'                       | accuracy=100.00%",
+    "  - co_insured_name                : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - insurer_name                   : actual='OLD MUTUAL INSURE LTD'                | predicted='OLD MUTUAL INSURE LTD'             | accuracy=100.00%",
+    "  - insurer_phone                  : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - intermediary_name              : actual='FIRST CONSULT'                        | predicted='FIRST CONSULT'                     | accuracy=100.00%",
+    "",
+    "----------------------------------------------------------------------\n",
+    "File: 1_removed.pdf (resolved as: 1_removed.pdf)",
+    "Fields:",
+    "  - insured_name                   : actual='MS V NIMJE'                           | predicted='MS V NIMJE'                        | accuracy=100.00%",
+    "  - date_of_birth                  : actual='04/04/2004'                           | predicted='04/04/2004'                        | accuracy=100.00%",
+    "  - occupation                     : actual='AI/ML Engineer'                       | predicted='AI/ML Engineer'                    | accuracy=100.00%",
+    "  - postal_address                 : actual='P.O. Blue Ridge Pune 3290'            | predicted='P.O. Blue Ridge Pune 3290'         | accuracy=100.00%",
+    "  - physical_address               : actual='26 Blue Ridge Pune 3290'              | predicted='26 Blue Ridge Pune 3290'           | accuracy=100.00%",
+    "  - cell_phone                     : actual='1234567890'                           | predicted='1234567890'                        | accuracy=100.00%",
+    "  - email                          : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - policy_number_broker           : actual='GNBVII-0065509'                       | predicted='GNBVII-0065509'                    | accuracy=100.00%",
+    "  - start_date_of_cover            : actual='01/01/2024'                           | predicted='01/01/2024'                        | accuracy=100.00%",
+    "  - anniversary_date               : actual='01/01/2026'                           | predicted='01/01/2026'                        | accuracy=100.00%",
+    "  - original_inception_date        : actual='01/01/2021'                           | predicted='01/01/2021'                        | accuracy=100.00%",
+    "  - period_of_insurance            : actual='(A) 01/01/2025 to 31/01/2025, and renewing monthly thereafter. (B) Any subsequent period for which the Company agrees to renew this policy or any section thereof.' | predicted='01/01/2025 to 31/01/2025, and renewing monthly thereafter' | accuracy= 52.05%",
+    "  - total_premium                  : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - payment_method                 : actual='Debit Order'                          | predicted='Debit Order'                       | accuracy=100.00%",
+    "  - co_insured_name                : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - insurer_name                   : actual='OLD MUTUAL INSURE LTD'                | predicted='OLD MUTUAL INSURE LTD'             | accuracy=100.00%",
+    "  - insurer_phone                  : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - intermediary_name              : actual='FIRST CONSULT'                        | predicted='FIRST CONSULT'                     | accuracy=100.00%",
+    "",
+    "----------------------------------------------------------------------\n",
+    "File: 2_removed.pdf (resolved as: 2_removed.pdf)",
+    "Fields:",
+    "  - insured_name                   : actual='MR K SINHA'                           | predicted='MR K SINHA'                        | accuracy=100.00%",
+    "  - date_of_birth                  : actual='29/08/2002'                           | predicted='29/08/2002'                        | accuracy=100.00%",
+    "  - occupation                     : actual='AI/ML Engineer'                       | predicted='AI/ML Engineer'                    | accuracy=100.00%",
+    "  - postal_address                 : actual='P.O. Katraj 3567'                     | predicted='P.O. Katraj Pune 3567'             | accuracy= 86.49%",
+    "  - physical_address               : actual='26 Blue Ridge Pune 3290'              | predicted='26 Blue Ridge Pune 3290'           | accuracy=100.00%",
+    "  - cell_phone                     : actual='9782793478'                           | predicted='9782793478'                        | accuracy=100.00%",
+    "  - email                          : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - policy_number_broker           : actual='GNBVII-0065509'                       | predicted='GNBVII-0065509'                    | accuracy=100.00%",
+    "  - start_date_of_cover            : actual='01/01/2024'                           | predicted='01/01/2024'                        | accuracy=100.00%",
+    "  - anniversary_date               : actual='01/01/2026'                           | predicted='01/01/2026'                        | accuracy=100.00%",
+    "  - original_inception_date        : actual='01/01/2021'                           | predicted='01/01/2021'                        | accuracy=100.00%",
+    "  - period_of_insurance            : actual='(A) 01/01/2025 to 31/01/2025, and renewing monthly thereafter. (B) Any subsequent period for which the Company agrees to renew this policy or any section thereof.' | predicted='01/01/2025 to 31/01/2025, and renewing monthly thereafter' | accuracy= 52.05%",
+    "  - total_premium                  : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - payment_method                 : actual='Debit Order'                          | predicted='Debit Order'                       | accuracy=100.00%",
+    "  - co_insured_name                : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - insurer_name                   : actual='OLD MUTUAL INSURE LTD'                | predicted='OLD MUTUAL INSURE LTD'             | accuracy=100.00%",
+    "  - insurer_phone                  : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - intermediary_name              : actual='FIRST CONSULT'                        | predicted='FIRST CONSULT'                     | accuracy=100.00%",
+    "",
+    "----------------------------------------------------------------------\n",
+    "File: 2_text_image.pdf (resolved as: 2_text+image.pdf)",
+    "Fields:",
+    "  - insured_name                   : actual='MR K SINHA'                           | predicted='MR K SINHA'                        | accuracy=100.00%",
+    "  - date_of_birth                  : actual='29/08/2002'                           | predicted='29/08/2002'                        | accuracy=100.00%",
+    "  - occupation                     : actual='AI/ML Engineer'                       | predicted='AI / ML Engineer'                  | accuracy= 93.33%",
+    "  - postal_address                 : actual='P.O. Katraj 3567'                     | predicted='P.O. Katraj Pune 3567'             | accuracy= 86.49%",
+    "  - physical_address               : actual='26 Blue Ridge Pune 3290'              | predicted='26 Blue Ridge Pune 3290'           | accuracy= 95.65%",
+    "  - cell_phone                     : actual='9782793478'                           | predicted='9782793478'                        | accuracy=100.00%",
+    "  - email                          : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - policy_number_broker           : actual='GNBVII-0065509'                       | predicted='GNBVII - 0065509'                  | accuracy= 93.33%",
+    "  - start_date_of_cover            : actual='01/01/2024'                           | predicted='01/01/2025'                        | accuracy= 90.00%",
+    "  - anniversary_date               : actual='01/01/2026'                           | predicted='01/01/2026'                        | accuracy=100.00%",
+    "  - original_inception_date        : actual='01/01/2021'                           | predicted='01/01/2021'                        | accuracy=100.00%",
+    "  - period_of_insurance            : actual='(A) 01/01/2025 to 31/01/2025, and renewing monthly thereafter. (B) Any subsequent period for which the Company agrees to renew this policy or any section thereof.' | predicted='( A ) 01/01/2025 to 31/01/2025 , and renewing monthly thereafter . ( B ) Any subsequent period for which the Company agrees to renew this policy or any section thereof .' | accuracy= 97.89%",
+    "  - total_premium                  : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - payment_method                 : actual='Debit Order'                          | predicted='Debit Order'                       | accuracy=100.00%",
+    "  - co_insured_name                : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - insurer_name                   : actual='OLD MUTUAL INSURE LTD'                | predicted='OLD MUTUAL INSURE LTD'             | accuracy=100.00%",
+    "  - insurer_phone                  : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - intermediary_name              : actual='FIRST CONSULT'                        | predicted='FIRST CONSULT'                     | accuracy=100.00%",
+    "",
+    "----------------------------------------------------------------------\n",
+    "File: 9_removed.pdf (resolved as: 9_removed.pdf)",
+    "Fields:",
+    "  - insured_name                   : actual='Mr K Sinha'                           | predicted='Mr K Sinha'                        | accuracy=100.00%",
+    "  - date_of_birth                  : actual='12/07/2004'                           | predicted='12/07/2004'                        | accuracy=100.00%",
+    "  - occupation                     : actual='Quicksure Pensioner (55 years or older and gainfully employed)' | predicted='Quicksure Pensioner (55 years or Order and gainfully employed)' | accuracy= 98.39%",
+    "  - postal_address                 : actual='FLAT 101, HINJA, PUNE, 2109'          | predicted='FLAT 101, HINJA, PUNE, 2109'       | accuracy=100.00%",
+    "  - physical_address               : actual='29 BLUE RIDGE, PUNE, 2176'            | predicted='29 BLUE RIDGE, PUNE, 2176'         | accuracy=100.00%",
+    "  - cell_phone                     : actual='7686765675'                           | predicted='7686765675'                        | accuracy=100.00%",
+    "  - email                          : actual='b8skhh@yeb.o.za'                      | predicted='b8skhh@yeb.o.za'                   | accuracy=100.00%",
+    "  - policy_number_broker           : actual='013348'                               | predicted='013348'                            | accuracy=100.00%",
+    "  - start_date_of_cover            : actual='01/04/2022'                           | predicted='01/04/2022'                        | accuracy=100.00%",
+    "  - anniversary_date               : actual='01/01/2025'                           | predicted='01/01/2025'                        | accuracy=100.00%",
+    "  - original_inception_date        : actual='01/01/2002'                           | predicted='01/01/2002'                        | accuracy=100.00%",
+    "  - period_of_insurance            : actual='A) From 01/04/2023 to 30/04/2023 both dates inclusive B) Any subsequent period for which the company agrees to renew this policy or section thereof' | predicted='A) From 01/04/2023 to 30/04/2023 both dates inclusive B) Any subsequent period for which the company agrees to renew this policy or section thereof' | accuracy=100.00%",
+    "  - total_premium                  : actual='R1 279,95'                            | predicted='R1 279,95'                         | accuracy=100.00%",
+    "  - payment_method                 : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - co_insured_name                : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - insurer_name                   : actual='Old Mutual Insure Ltd'                | predicted='Old Mutual Insure Ltd'             | accuracy=100.00%",
+    "  - insurer_phone                  : actual='87868881267'                          | predicted=''                                  | accuracy=  0.00%",
+    "  - intermediary_name              : actual='1375 - Kotfou Makelaars B'            | predicted='Quicksure (Pty) Ltd'               | accuracy= 18.18%",
+    "",
+    "----------------------------------------------------------------------\n",
+    "File: 10_removed.docx (resolved as: 10_removed.docx)",
+    "Fields:",
+    "  - insured_name                   : actual='Mr J Patil'                           | predicted='Mr J Patil'                        | accuracy=100.00%",
+    "  - date_of_birth                  : actual='12/12/2003'                           | predicted='12/12/2003'                        | accuracy=100.00%",
+    "  - occupation                     : actual='Quicksure Pensioner (55 years or older and gainfully employed)' | predicted='Quicksure Pensioner (55 years or Order and gainfully employed)' | accuracy= 98.39%",
+    "  - postal_address                 : actual='FLAT 101, HINJA, PUNE, 2109'          | predicted='FLAT 101, HINJA, PUNE, 2109'       | accuracy=100.00%",
+    "  - physical_address               : actual='29 BLUE RIDGE, PUNE, 2176'            | predicted='29 BLUE RIDGE, PUNE, 2176'         | accuracy=100.00%",
+    "  - cell_phone                     : actual='7686765243'                           | predicted='7686765243'                        | accuracy=100.00%",
+    "  - email                          : actual='b8hkkhh@yeb.o.za'                     | predicted='b8hkkhh@yeb.o.za'                  | accuracy=100.00%",
+    "  - policy_number_broker           : actual='013345'                               | predicted='013345'                            | accuracy=100.00%",
+    "  - start_date_of_cover            : actual='01/05/2022'                           | predicted='01/05/2022'                        | accuracy=100.00%",
+    "  - anniversary_date               : actual='01/01/2025'                           | predicted='01/01/2025'                        | accuracy=100.00%",
+    "  - original_inception_date        : actual='01/01/2002'                           | predicted='01/01/2002'                        | accuracy=100.00%",
+    "  - period_of_insurance            : actual='A) From 01/05/2023 to 30/05/2023 both dates inclusive B) Any subsequent period for which the company agrees to renew this policy or section thereof' | predicted='From 01/05/2023 to 30/05/2023 both dates inclusive' | accuracy= 50.76%",
+    "  - total_premium                  : actual='R1 279,95'                            | predicted='R1 279,95'                         | accuracy=100.00%",
+    "  - payment_method                 : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - co_insured_name                : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - insurer_name                   : actual='Old Mutual Insure Ltd'                | predicted='Old Mutual Insure Ltd'             | accuracy=100.00%",
+    "  - insurer_phone                  : actual='8786888452'                           | predicted='8786888452'                        | accuracy=100.00%",
+    "  - intermediary_name              : actual='1375 - Kotfou Makelaars B'            | predicted='Quicksure (Pty) Ltd'               | accuracy= 18.18%",
+    "",
+    "----------------------------------------------------------------------\n",
+    "File: 10_removed.pdf (resolved as: 10_removed.pdf)",
+    "Fields:",
+    "  - insured_name                   : actual='Mr J Patil'                           | predicted='Mr J Patil'                        | accuracy=100.00%",
+    "  - date_of_birth                  : actual='12/12/2003'                           | predicted='12/12/2003'                        | accuracy=100.00%",
+    "  - occupation                     : actual='Quicksure Pensioner (55 years or older and gainfully employed)' | predicted='Quicksure Pensioner (55 years or Order and gainfully employed)' | accuracy= 98.39%",
+    "  - postal_address                 : actual='FLAT 101, HINJA, PUNE, 2109'          | predicted='FLAT 101, HINJA, PUNE, 2109'       | accuracy=100.00%",
+    "  - physical_address               : actual='29 BLUE RIDGE, PUNE, 2176'            | predicted='29 BLUE RIDGE, PUNE, 2176'         | accuracy=100.00%",
+    "  - cell_phone                     : actual='7686765243'                           | predicted='7686765243'                        | accuracy=100.00%",
+    "  - email                          : actual='b8hkkhh@yeb.o.za'                     | predicted='b8hkkhh@yeb.o.za'                  | accuracy=100.00%",
+    "  - policy_number_broker           : actual='013345'                               | predicted='013345'                            | accuracy=100.00%",
+    "  - start_date_of_cover            : actual='01/05/2022'                           | predicted='01/05/2022'                        | accuracy=100.00%",
+    "  - anniversary_date               : actual='01/01/2025'                           | predicted='01/01/2025'                        | accuracy=100.00%",
+    "  - original_inception_date        : actual='01/01/2002'                           | predicted='01/01/2002'                        | accuracy=100.00%",
+    "  - period_of_insurance            : actual='A) From 01/05/2023 to 30/05/2023 both dates inclusive B) Any subsequent period for which the company agrees to renew this policy or section thereof' | predicted='From 01/05/2023 to 30/05/2023 both dates inclusive' | accuracy= 50.76%",
+    "  - total_premium                  : actual='R1 279,95'                            | predicted='R1 279,95'                         | accuracy=100.00%",
+    "  - payment_method                 : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - co_insured_name                : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - insurer_name                   : actual='Old Mutual Insure Ltd'                | predicted='Old Mutual Insure Ltd'             | accuracy=100.00%",
+    "  - insurer_phone                  : actual='8786888452'                           | predicted='8786888452'                        | accuracy=100.00%",
+    "  - intermediary_name              : actual='1375 - Kotfou Makelaars B'            | predicted='Quicksure (Pty) Ltd'               | accuracy= 18.18%",
+    "",
+    "----------------------------------------------------------------------\n",
+    "File: Vehicle_Insurance.pdf (resolved as: Vehicle Insurance.pdf)",
+    "Fields:",
+    "  - proposer_name                  : actual='ATHARV SUNIL SURYAVANSHI'             | predicted='ATHARV SUNIL SURYAVANSHI'          | accuracy=100.00%",
+    "  - proposer_address               : actual='A P, 33 - 34 Saravasukhi Nagar Limayewadi,Solapur, Solapur-413001 , , SOLAPUR, Maharashtra-413001' | predicted='A P, 33 - 34 Saravasukhi Nagar Limayewadi, Solapur, Solapur-413001' | accuracy= 80.98%",
+    "  - proposer_mobile                : actual='7878782255'                           | predicted='7878782255'                        | accuracy=100.00%",
+    "  - proposer_email                 : actual='ligade@gmail.com'                     | predicted='ligade@gmail.com'                  | accuracy=100.00%",
+    "  - policy_number                  : actual='OG-27-1901-1802-00003523'             | predicted='OG-27-1901-1802-00003523'          | accuracy=100.00%",
+    "  - previous_policy_number         : actual='OG-26-1901-1802-00002713'             | predicted='OG-26-1901-1802-00002713'          | accuracy=100.00%",
+    "  - registration_number            : actual='MH13CG6010'                           | predicted='MH13CG6010'                        | accuracy=100.00%",
+    "  - vehicle_make                   : actual='HONDA'                                | predicted='HONDA'                             | accuracy=100.00%",
+    "  - vehicle_model                  : actual='DREAM YUGA'                           | predicted='DREAM YUGA'                        | accuracy=100.00%",
+    "  - vehicle_sub_type               : actual='SELF DRUM CBS'                        | predicted='SELF DRUM CBS'                     | accuracy=100.00%",
+    "  - engine_number                  : actual='JC58ET4094114'                        | predicted='JC58ET4094114'                     | accuracy=100.00%",
+    "  - chassis_number                 : actual='ME4JC58AEFT093810'                    | predicted='ME4JC58AEFT093810'                 | accuracy=100.00%",
+    "  - year_of_manufacture            : actual='2016'                                 | predicted='2016'                              | accuracy=100.00%",
+    "  - vehicle_idv                    : actual='21,330.00'                            | predicted='21,330.00'                         | accuracy=100.00%",
+    "  - total_idv                      : actual='21,330.00'                            | predicted='21,330.00'                         | accuracy=100.00%",
+    "  - ncb_percent                    : actual='-20'                                  | predicted='-20'                               | accuracy=100.00%",
+    "  - policy_period_start            : actual='12/06/2026'                           | predicted='12/06/2026'                        | accuracy=100.00%",
+    "  - policy_period_end              : actual='11/06/2027'                           | predicted='11/06/2027'                        | accuracy=100.00%",
+    "  - own_damage_premium             : actual='229.00'                               | predicted='229.00'                            | accuracy=100.00%",
+    "  - liability_premium              : actual='1,045.00'                             | predicted='1,045.00'                          | accuracy=100.00%",
+    "  - total_premium                  : actual='1,274.00'                             | predicted='1,274.00'                          | accuracy=100.00%",
+    "  - final_premium                  : actual='1,504.00'                             | predicted='1,504.00'                          | accuracy=100.00%",
+    "  - broker_name                    : actual='PROBUS INSURANCE BROKER PRIVATE LIMITED' | predicted='PROBUS INSURANCE BROKER PRIVATE LIMITED' | accuracy=100.00%",
+    "  - broker_code                    : actual='10037456'                             | predicted='10037456'                          | accuracy=100.00%",
+    "  - customer_id                    : actual='468223230'                            | predicted='468223230'                         | accuracy=100.00%",
+    "",
+    "----------------------------------------------------------------------\n",
+    "File: Travel_Insurance.pdf (resolved as: Travel Insurance.pdf)",
+    "Fields:",
+    "  - master_policy_number           : actual='5002004224P101121449000'              | predicted='5002004224P101121449000'           | accuracy=100.00%",
+    "  - certificate_number             : actual='82428963570106012026'                 | predicted='82428963570106012026'              | accuracy=100.00%",
+    "  - group_policyholder_name        : actual='Indian Railway Catering and Tourism Corporation Limited' | predicted='Indian Railway Catering and Tourism Corporation Limited' | accuracy=100.00%",
+    "  - insured_name                   : actual='ATHARV SURYAVANS'                     | predicted='ATHARV SURYAVANS'                  | accuracy=100.00%",
+    "  - insured_age                    : actual='21'                                   | predicted='21'                                | accuracy=100.00%",
+    "  - insured_gender                 : actual='Male'                                 | predicted='Male'                              | accuracy=100.00%",
+    "  - insured_mobile                 : actual='9371110123'                           | predicted='9371110123'                        | accuracy=100.00%",
+    "  - insured_email                  : actual='atharvsuryavanshi35@gmail.com'        | predicted='atharvsuryavanshi35@gmail.com'     | accuracy=100.00%",
+    "  - trip_start                     : actual='08/01/2026 14:00:00'                  | predicted='08/01/2026 14:00:00'               | accuracy=100.00%",
+    "  - trip_end                       : actual='08/01/2026 18:05:00'                  | predicted='08/01/2026 18:05:00'               | accuracy=100.00%",
+    "  - originating_station            : actual='SOLAPUR JN'                           | predicted='SOLAPUR JN'                        | accuracy=100.00%",
+    "  - destination_station            : actual='PUNE JN'                              | predicted='PUNE JN'                           | accuracy=100.00%",
+    "  - train_number                   : actual='12170'                                | predicted='12170'                             | accuracy=100.00%",
+    "  - train_name                     : actual='PUNE INTERCITY'                       | predicted='PUNE INTERCITY'                    | accuracy=100.00%",
+    "  - pnr_number                     : actual='8242896357'                           | predicted='8242896357'                        | accuracy=100.00%",
+    "  - cover_death                    : actual='10,00,000/-'                          | predicted='10,00,000/-'                       | accuracy=100.00%",
+    "  - cover_permanent_total_disability : actual='10,00,000/-'                          | predicted='10,00,000/-'                       | accuracy=100.00%",
+    "  - cover_permanent_partial_disability : actual='upto 7,50,000'                        | predicted='upto 7,50,000'                     | accuracy=100.00%",
+    "  - cover_hospitalization_expenses : actual='Upto 2,00,000/-'                      | predicted='Upto 2,00,000/-'                   | accuracy=100.00%",
+    "  - cover_transportation_mortal_remains : actual='10,000/-'                             | predicted='10,000/-'                          | accuracy=100.00%",
+    "  - base_premium                   : actual='0.38'                                 | predicted='0.38'                              | accuracy=100.00%",
+    "  - igst                           : actual='0.07'                                 | predicted='0.07'                              | accuracy=100.00%",
+    "  - total_premium                  : actual='0.45'                                 | predicted='0.45'                              | accuracy=100.00%",
+    "  - certificate_issue_date         : actual='06/01/2026'                           | predicted='06/01/2026'                        | accuracy=100.00%",
+    "  - insurer_name                   : actual='UNITED INDIA INSURANCE COMPANY LIMITED' | predicted='UNITED INDIA INSURANCE COMPANY LIMITED' | accuracy=100.00%",
+    "  - gst_number                     : actual='33AAACU5552CIZQ'                      | predicted='33AAACU5552CIZQ'                   | accuracy=100.00%",
+    "  - pan_number                     : actual='AAACU5552C'                           | predicted='AAACU5552C'                        | accuracy=100.00%",
+    "",
+    "----------------------------------------------------------------------\n",
+    "File: Health_Insurance.pdf (resolved as: Health Insurance.pdf)",
+    "Fields:",
+    "  - policy_number                  : actual='7619162501076561'                     | predicted='7619162501076561'                  | accuracy=100.00%",
+    "  - insurer_name                   : actual='Star Health And Allied Insurance Company Limited' | predicted='Star Health And Allied Insurance Company Limited' | accuracy=100.00%",
+    "  - proposer_name                  : actual='SUNIL RAMKRISHNA SURYAVANSHI'         | predicted='SUNIL RAMKRISHNA SURYAVANSHI'      | accuracy=100.00%",
+    "  - proposer_address               : actual='33/34 sarvsukhi nagar limyewadi, Solapur North, Solapur, Solapur,Maharashtra-413001' | predicted='33/34 sarvsukhi nagar, limyewadi, Solapur North, Solapur, Maharashtra-413001' | accuracy= 94.34%",
+    "  - proposer_mobile                : actual='9028922255'                           | predicted='9028922255'                        | accuracy=100.00%",
+    "  - proposer_email                 : actual='suryawanshi.sr@Gmail.com'             | predicted='suryawanshi.sr@Gmail.com'          | accuracy=100.00%",
+    "  - customer_code                  : actual='PI0007840088'                         | predicted='PI0007840088'                      | accuracy=100.00%",
+    "  - gstin                          : actual='27AAJCS4517L1ZY'                      | predicted='27AAJCS4517L1ZY'                   | accuracy=100.00%",
+    "  - date_of_inception              : actual='04-Feb-2025'                          | predicted='04/02/2025'                        | accuracy= 57.14%",
+    "  - period_start                   : actual='04-Feb-2026 00:00 Hrs'                | predicted='04/02/2026'                        | accuracy= 38.71%",
+    "  - period_end                     : actual='Midnight of 03-Feb-2027'              | predicted=''                                  | accuracy=  0.00%",
+    "  - sum_insured                    : actual='Rs. 25,00,000/-'                      | predicted='Rs. 25,00,000/-'                   | accuracy=100.00%",
+    "  - scheme_description             : actual='2A+2C'                                | predicted='2A+2C'                             | accuracy=100.00%",
+    "  - base_premium                   : actual='Rs. 1,875/-'                          | predicted='Rs. 1,875/-'                       | accuracy=100.00%",
+    "  - stamp_duty                     : actual='Rs. 125/-'                            | predicted='Rs. 125/-'                         | accuracy=100.00%",
+    "  - total_premium                  : actual='Rs. 1,875/-'                          | predicted='Rs. 1,875/-'                       | accuracy=100.00%",
+    "  - intermediary_code              : actual='BA0000335982'                         | predicted='BA0000335982'                      | accuracy=100.00%",
+    "  - intermediary_name              : actual='Mr.MULANI YUNUS ILAHI'                | predicted='Mr.MULANI YUNUS ILAHI'             | accuracy=100.00%",
+    "  - insured_members                : actual='SUNIL RAMKRISHNA SURYAVANSHI (Male, 10-Jun-1975, Self), SMITA SURYAVANSHI (Female, 04-Dec-1980, Spouse), ATHARVA SURYAVANSHI (Male, 06-Nov-2004, Son), SANIKA SURYAVANSHI (Female, 20-Dec-2007, Daughter)' | predicted='SUNIL RAMKRISHNA SURYAVANSHI (Male, 10-Jun-1975, Self), SMITA SURYAVANSHI (Female, 04-Dec-1980, Spouse), ATHARVA SURYAVANSHI (Male, 06-Nov-2004, Son), SANIKA SURYAVANSHI (Female, 20-Dec-2007, Daughter)' | accuracy=100.00%",
+    "  - nominee_name                   : actual='SMITA SUNIL SURYAVANSHI'              | predicted='SMITA SUNIL SURYAVANSHI'           | accuracy=100.00%",
+    "  - issuing_office                 : actual='Branch Office - Solapur'              | predicted='Branch Office - Solapur'           | accuracy=100.00%",
+    "",
+    "----------------------------------------------------------------------\n",
+    "File: 16.jpg (resolved as: 16.jpg)",
+    "Fields:",
+    "  - insured_name                   : actual='Estate late R R Goveder'              | predicted='Estate Date R R Goveder'           | accuracy= 95.65%",
+    "  - date_of_birth                  : actual='09/04/1935'                           | predicted='09/04/1935'                        | accuracy=100.00%",
+    "  - occupation                     : actual='Retired'                              | predicted='Retired'                           | accuracy=100.00%",
+    "  - postal_address                 : actual='ERF: LOT 645, - KADVILLE HEIGHTS, GLEN TERRACE, UMZINTO, -, 4202' | predicted='ERF: LOT 645, KADVILLE HEIGHTS, GLEN TERRACE, UMZINTO, 4202' | accuracy= 95.93%",
+    "  - physical_address               : actual='ERF: LOT 645, - KADVILLE HEIGHTS, GLEN TERRACE, UMZINTO, -, 4202' | predicted='ERF: LOT 645, KADVILLE HEIGHTS, GLEN TERRACE, UMZINTO, 4202' | accuracy= 95.93%",
+    "  - cell_phone                     : actual='0835642989'                           | predicted='0835642989'                        | accuracy=100.00%",
+    "  - email                          : actual='collkigov31@gmail.com'                | predicted='collkigov31@gmail.com'             | accuracy=100.00%",
+    "  - policy_number_broker           : actual='MER31575OLD'                          | predicted='MER31575OLD'                       | accuracy=100.00%",
+    "  - start_date_of_cover            : actual='01/11/2025'                           | predicted='01/11/2025'                        | accuracy=100.00%",
+    "  - anniversary_date               : actual='01/11/2026'                           | predicted='01/11/2026'                        | accuracy=100.00%",
+    "  - original_inception_date        : actual='07/02/2016'                           | predicted='07/02/2016'                        | accuracy=100.00%",
+    "  - period_of_insurance            : actual='01/11/2025 to 31/10/2026, and renewing monthly thereafter.' | predicted='01/11/2025 to 31/10/2026, and renewing monthly thereafter' | accuracy= 99.13%",
+    "  - total_premium                  : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - payment_method                 : actual='Debit Order'                          | predicted='Debit Order'                       | accuracy=100.00%",
+    "  - co_insured_name                : actual='Mrs E Goveder & Family FTRR&I'        | predicted='Mrs E Goveder & Family FTRR & I'   | accuracy= 96.67%",
+    "  - insurer_name                   : actual='Old Mutual Insure Limited'            | predicted='Old Mutual Insure Limited'         | accuracy=100.00%",
+    "  - insurer_phone                  : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - intermediary_name              : actual='Curnow Scott (Pty) Ltd'               | predicted='Curnow Scott (Pty) Ltd'            | accuracy=100.00%",
+    "",
+    "----------------------------------------------------------------------\n",
+    "File: 17.jpg (resolved as: 17.jpg)",
+    "Fields:",
+    "  - insured_name                   : actual='Estate late R R Rajni'                | predicted='Estate Date R R Rajni'             | accuracy= 95.24%",
+    "  - date_of_birth                  : actual='21/03/19389'                          | predicted=''                                  | accuracy=  0.00%",
+    "  - occupation                     : actual='Government Officer'                   | predicted='Government Officer'                | accuracy=100.00%",
+    "  - postal_address                 : actual='ERF: LOT 645, - KADVILLE HEIGHTS, GLEN HINJEWADI, UPUNE, -, 4222' | predicted='ERF: LOT 645, KADVILLE HEIGHTS, GLEN HINJEWADI, Pune, 4222' | accuracy= 95.08%",
+    "  - physical_address               : actual='ERF: LOT 645, - KADVILLE HEIGHTS, GLEN HINJEWADI, UPUNE, -, 4222' | predicted='ERF: LOT 645, KADVILLE HEIGHTS, GLEN HINJEWADI, Pune, 4222' | accuracy= 95.08%",
+    "  - cell_phone                     : actual='0835642987'                           | predicted='0835642987'                        | accuracy=100.00%",
+    "  - email                          : actual='colhuhigov31@gmail.com'               | predicted='colhuhigov31@gmail.com'            | accuracy=100.00%",
+    "  - policy_number_broker           : actual='MER31985OLD'                          | predicted='MER31985OLD'                       | accuracy=100.00%",
+    "  - start_date_of_cover            : actual='01/11/2025'                           | predicted='01/11/2025'                        | accuracy=100.00%",
+    "  - anniversary_date               : actual='01/11/2026'                           | predicted='01/11/2026'                        | accuracy=100.00%",
+    "  - original_inception_date        : actual='07/02/2016'                           | predicted='07/02/2016'                        | accuracy=100.00%",
+    "  - period_of_insurance            : actual='01/11/2025 to 31/10/2026, and renewing monthly thereafter.' | predicted='01/11/2025 to 31/10/2026, and renewing monthly thereafter' | accuracy= 99.13%",
+    "  - total_premium                  : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - payment_method                 : actual='Debit Order'                          | predicted='Debit Order'                       | accuracy=100.00%",
+    "  - co_insured_name                : actual='Mrs E Rajni & Family FTRR&I'          | predicted='Mrs E Rajni & Family FTRR & I'     | accuracy= 96.43%",
+    "  - insurer_name                   : actual='Old Mutual Insure Limited'            | predicted='Old Mutual Insure Limited'         | accuracy=100.00%",
+    "  - insurer_phone                  : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - intermediary_name              : actual='Curnow Scott (Pty) Ltd'               | predicted='Curnow Scott (Pty) Ltd'            | accuracy=100.00%",
+    "",
+    "----------------------------------------------------------------------\n",
+    "File: 20.jpg (resolved as: 20.jpg)",
+    "Fields:",
+    "  - insured_name                   : actual='Estate late K L Kumbhare'             | predicted='Estate Date KL Kumbhare'           | accuracy= 93.62%",
+    "  - date_of_birth                  : actual='19/04/1967'                           | predicted='19/04/1967'                        | accuracy=100.00%",
+    "  - occupation                     : actual='Government Officer'                   | predicted='Government Officer'                | accuracy=100.00%",
+    "  - postal_address                 : actual='ERF: LOT 645, - KADVILLE HEIGHTS, GLEN HINJEWADI, UPUNE, -, 4225' | predicted='ERF: LOT 645, KADVILLE HEIGHTS, GLEN HINJEWADI, Pune, 4225' | accuracy= 95.08%",
+    "  - physical_address               : actual='ERF: LOT 645, - KADVILLE HEIGHTS, GLEN HINJEWADI, UPUNE, -, 4225' | predicted='ERF: LOT 645, KADVILLE HEIGHTS, GLEN HINJEWADI, Pune, 4225' | accuracy= 95.08%",
+    "  - cell_phone                     : actual='08356429598'                          | predicted='08356429598'                       | accuracy=100.00%",
+    "  - email                          : actual='cosdkioigov31@gmail.com'              | predicted='cosdkioigov31@gmail.com'           | accuracy=100.00%",
+    "  - policy_number_broker           : actual='MER31925OLD'                          | predicted='MER31925OLD'                       | accuracy=100.00%",
+    "  - start_date_of_cover            : actual='01/11/2025'                           | predicted='01/11/2025'                        | accuracy=100.00%",
+    "  - anniversary_date               : actual='01/11/2026'                           | predicted='01/11/2026'                        | accuracy=100.00%",
+    "  - original_inception_date        : actual='17/02/2016'                           | predicted='17/02/2016'                        | accuracy=100.00%",
+    "  - period_of_insurance            : actual='01/11/2025 to 31/10/2026, and renewing monthly thereafter.' | predicted='01/11/2025 to 31/10/2026, and renewing monthly thereafter' | accuracy= 99.13%",
+    "  - total_premium                  : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - payment_method                 : actual='Debit Order'                          | predicted='Debit Order'                       | accuracy=100.00%",
+    "  - co_insured_name                : actual='Miss D Kumbhare & Family FTKR&I'      | predicted='Miss D Kumbhare & Family FTKR & I' | accuracy= 96.88%",
+    "  - insurer_name                   : actual='Old Mutual Insure Limited'            | predicted='Old Mutual Insure Limited'         | accuracy=100.00%",
+    "  - insurer_phone                  : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - intermediary_name              : actual='Curnow Scott (Pty) Ltd'               | predicted='Curnow Scott (Pty) Ltd'            | accuracy=100.00%",
+    "",
+    "----------------------------------------------------------------------\n",
+    "File: only video.mp4 (resolved as: only video.mp4)",
+    "Fields:",
+    "  - insured_name                   : actual='MR K SINHA'                           | predicted='MR K SINHA'                        | accuracy=100.00%",
+    "  - date_of_birth                  : actual='29/08/2002'                           | predicted='29/08/2002'                        | accuracy=100.00%",
+    "  - occupation                     : actual='AI/ML Engineer'                       | predicted='AI / ML Engineer'                  | accuracy= 93.33%",
+    "  - postal_address                 : actual='P.O. Katraj Pune 3567'                | predicted='P.O. Katraj, Pune, 3567'           | accuracy= 95.45%",
+    "  - physical_address               : actual='15 Executive Drive, Orient Heights, Pietermaritzburg 3201' | predicted=''                                  | accuracy=  0.00%",
+    "  - cell_phone                     : actual='9782793478'                           | predicted='9782793478'                        | accuracy=100.00%",
+    "  - policy_number_broker           : actual='GNBVII-0065509'                       | predicted='GNBVII - 0065509'                  | accuracy= 93.33%",
+    "  - start_date_of_cover            : actual='01/01/2024'                           | predicted='01/01/2024'                        | accuracy=100.00%",
+    "  - anniversary_date               : actual='01/01/2026'                           | predicted='01/01/2026'                        | accuracy=100.00%",
+    "  - original_inception_date        : actual='01/01/2021'                           | predicted='01/01/2021'                        | accuracy=100.00%",
+    "  - period_of_insurance            : actual='01/01/2025 to 31/01/2025, and renewing monthly thereafter' | predicted='( A ) 01/01/2025 to 31/01/2025 , and renewing ( B ) Any subsequent period for which the Comp' | accuracy= 64.43%",
+    "  - payment_method                 : actual='Debit Order'                          | predicted='Debit Order'                       | accuracy=100.00%",
+    "  - insurer_name                   : actual='OLD MUTUAL INSURE LTD'                | predicted='OLD MUTUAL INSURE LTD'             | accuracy=100.00%",
+    "  - intermediary_name              : actual='FIRST CONSULT'                        | predicted='FIRST CONSULT'                     | accuracy=100.00%",
+    "",
+    "----------------------------------------------------------------------\n",
+    "File: ElevenLabs_Untitled_project.mp3 (resolved as: ElevenLabs_Untitled_project.mp3)",
+    "Fields:",
+    "  - policy_number                  : actual='123456'                               | predicted='123456'                            | accuracy=100.00%",
+    "  - insurer_name                   : actual='ABC Insurance Limited'                | predicted='ABC Insurance Limited'             | accuracy=100.00%",
+    "  - proposer_name                  : actual='Atharv Suryavanshi'                   | predicted='Atharv Suryabhanshi'               | accuracy= 91.89%",
+    "  - proposer_address               : actual='29 Lake View Society, Pune'           | predicted='29 Lakeview Society Pune, Flat 11, Green Park, Pune' | accuracy= 64.94%",
+    "  - proposer_mobile                : actual='9876543210'                           | predicted='9876543210'                        | accuracy=100.00%",
+    "  - proposer_email                 : actual='atharv@gmail.com'                     | predicted=''                                  | accuracy=  0.00%",
+    "  - customer_code                  : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - gstin                          : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - date_of_inception              : actual='01/01/2020'                           | predicted='01/01/2020'                        | accuracy=100.00%",
+    "  - period_start                   : actual='01/05/2023'                           | predicted='01/05/2023'                        | accuracy=100.00%",
+    "  - period_end                     : actual='30/05/2023'                           | predicted='30/05/2023'                        | accuracy=100.00%",
+    "  - sum_insured                    : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - scheme_description             : actual='Health Insurance Premium Plan'        | predicted=''                                  | accuracy=  0.00%",
+    "  - base_premium                   : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - stamp_duty                     : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - total_premium                  : actual='1280 rupees'                          | predicted='Rs. 1,280'                         | accuracy= 40.00%",
+    "  - intermediary_code              : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - intermediary_name              : actual='Secure Insurance Services'            | predicted='Secure insurance services'         | accuracy=100.00%",
+    "  - insured_members                : actual='Atharv Suryavanshi (Software Engineer, 12 December 2003), Dhruv' | predicted='Atharv Suryabhanshi, Dhruv'        | accuracy= 53.93%",
+    "  - nominee_name                   : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "  - issuing_office                 : actual=''                                            | predicted=''                                  | [SKIPPED - both empty]",
+    "",
+    "----------------------------------------------------------------------\n"
+  ]
+}
